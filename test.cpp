@@ -71,7 +71,7 @@ void wrong_code() {
 	assert(int_greater(4, 3));
 #if WRONG_CODE
 	sort(begin(int_vec), end(int_vec), int_greater);
-	sort(begin(int_vec), end(int_vec), less_to_greater(less<int>()))
+	sort(begin(int_vec), end(int_vec), less_to_greater(less<int>()));
 #endif
 }
 
